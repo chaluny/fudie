@@ -13,11 +13,14 @@ MongoClient.connect('mongodb://chaluny:maccabi22@ds021046.mlab.com:21046/foodie'
     console.log('listening on 3000')
   })
 })
+app.listen(5000, () => {
+  console.log('listening on 3000')
+})
 app.get('/', (req, res) => {
   db.collection('quotes').find().toArray((err, result) => {
     if (err) return console.log(err)
     // renders index.ejs
-    res.render('index.ejs', {quotes: result})
+    res.render('index.js', {quotes: result})
   })
 })
 app.get('/seeit', (req, res) => {
