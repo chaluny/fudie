@@ -9,9 +9,9 @@ var db
 MongoClient.connect('mongodb://heroku_06881qw1:maccabi22@ds019996.mlab.com:19996/heroku_06881qw1', (err, database) => {
   if (err) return console.log(err)
   db = database
-  app.listen(5000, () => {
-    console.log('listening on 3000')
-  })
+  //app.listen(5000, () => {
+    //console.log('listening on 3000')
+  //})
 })
 //app.listen(5000, () => {
   //console.log('listening on 3000')
