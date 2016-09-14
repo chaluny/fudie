@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 var db
-MongoClient.connect('mongodb://chaluny:maccabi22@ds021046.mlab.com:21046/foodie', (err, database) => {
+MongoClient.connect('mongodb://heroku_06881qw1:maccabi22@ds019996.mlab.com:19996/heroku_06881qw1', (err, database) => {
   if (err) return console.log(err)
   db = database
   app.listen(5000, () => {
